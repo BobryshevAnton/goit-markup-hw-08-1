@@ -1,0 +1,37 @@
+/*компоненти root*/
+@import"./utils/variables";
+
+@import"./base/base";
+@import"./base/reset";
+
+
+/*компоненти першої сторінки*/
+/*Модальне вікно*/
+@import"./component/modal-window";
+/*секция хедер*/
+@import"./layout/heder-section";
+/*секция герой*/
+@import"./component/hero-section";
+/*секция особливості*/
+@import"./component/special-section";
+/*секция галерея*/
+@import"./component/work-section";
+/*секция команда*/
+@import"./component/team-section";
+/*секция постіні клієнти*/
+@import"./component/client-section";
+/*секция футер*/
+@import"./layout/footer-section";
+
+/*компоненти другої сторінки*/
+@import"./component/content-section";
+
+
+/*Компоненти Кнопки та Лінки*/
+@import"./component/buttons";
+
+/*Компоненти Logo*/
+@import"./component/logo";
+
+/*Компоненти Icon*/
+@import"./component/icon";
