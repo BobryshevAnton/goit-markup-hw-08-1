@@ -3,19 +3,42 @@
 
 .section.footer {
    background-color: var(--grey-color);
+   display: flex;
+   justify-content: center;
    padding-top: 60px;
    padding-bottom: 60px;
-   display: flex;
 }
 
 .footer__style {
-   display: flex;
-   align-items: baseline;
+   @media screen and (max-width: 478px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+   }
+}
+
+.footer__box {
+   @media screen and (max-width: 478px) {
+      text-align: center;
+      align-items: center;
+   }
 }
 
 .footer--logo {
-   display: flex;
-   color: var(--main-color);
+   @media screen and (max-width: 766px) {
+      display: flex;
+      color: var(--main-color);
+      justify-content: center;
+   }
+
+
+   @media screen and (min-width: 1200px) {}
 
 }
 
@@ -26,6 +49,15 @@
 .footer__card {
    flex-direction: column;
 }
+
+.footer__list {
+   @media screen and (max-width: 766px) {
+      display: flex;
+      justify-content: center;
+   }
+}
+
+
 
 .footer__link {
    color: var(--main-color);
@@ -57,7 +89,16 @@
 .footer__common {
    display: flex;
    flex-direction: column;
-   margin-left: 70px;
+   text-align: center;
+   margin-top: 60px;
+
+
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 70px;
+   }
 }
 
 .footer__name {
@@ -80,6 +121,10 @@
    &-list:last-child {
       margin-right: 0px;
    }
+
+
+
+
 }
 
 .icon__footer {

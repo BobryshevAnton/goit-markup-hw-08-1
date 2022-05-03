@@ -1,7 +1,12 @@
 /*стиль Галерея*/
 
 section.work {
-   padding-top: 0px;
+   display: none;
+
+   @media screen and (min-width: 1200px) {
+      display: contents;
+      padding-top: 0px;
+   }
 }
 
 .work__title {
@@ -22,7 +27,6 @@ section.work {
 .work__img {
    margin-right: 30px;
    position: relative;
-
 
    &:last-child {
       margin-right: 0px;

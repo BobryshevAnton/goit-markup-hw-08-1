@@ -2,6 +2,7 @@
 @import"./utils/variables";
 
 @import"./base/base";
+
 @import"./base/reset";
 
 
@@ -35,3 +36,6 @@
 
 /*Компоненти Icon*/
 @import"./component/icon";
+
+/*стилі контейнера*/
+@import"./component/conteiner";
