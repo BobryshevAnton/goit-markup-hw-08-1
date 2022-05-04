@@ -1001,41 +1001,75 @@ section.work {
 
 /*секция футер*/
 /*стиль Футер*/
+/*стиль Футер*/
 .section.footer {
   background-color: var(--grey-color);
-  display: flex;
-  justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 478px) {
-  .footer__style {
+@media screen and (max-width: 766px) {
+  .section.footer {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section.footer {
     display: flex;
+  }
+}
+
+.footer__style {
+  display: flex;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 766px) {
+  .footer__style {
     flex-direction: column;
-    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .footer__style {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__style {
-    display: flex;
     align-items: baseline;
   }
 }
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 766px) {
   .footer__box {
-    text-align: center;
-    align-items: center;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .footer__box {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
+}
+
+.footer--logo {
+  display: flex;
+  color: var(--main-color);
 }
 
 @media screen and (max-width: 766px) {
   .footer--logo {
-    display: flex;
-    color: var(--main-color);
-    justify-content: center;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
   }
 }
 
@@ -1045,13 +1079,6 @@ section.work {
 
 .footer__card {
   flex-direction: column;
-}
-
-@media screen and (max-width: 766px) {
-  .footer__list {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 .footer__link {
@@ -1083,14 +1110,26 @@ section.work {
 .footer__common {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin-top: 60px;
+}
+
+@media screen and (max-width: 766px) {
+  .footer__common {
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .footer__common {
+    margin-right: 74px;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__common {
-    display: flex;
-    flex-direction: column;
     margin-left: 70px;
   }
 }
@@ -1142,21 +1181,48 @@ section.work {
 .footer__form-icon {
   fill: var(--main-color);
   position: absolute;
-  top: 38px;
+  top: 18px;
   right: 28px;
 }
 
 /*стиль Подпишися*/
 .footer__subscription {
-  margin-left: 93px;
   display: flex;
   flex-direction: column;
-  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__subscription {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscription {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .footer__subscription {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 468px) and (max-width: 1198px) {
+  .footer__subscription {
+    width: 450px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 .footer__subscription-name {
   font-size: 14px;
-  line-height: 1.14px;
   text-transform: uppercase;
   color: var(--main-color);
   margin-bottom: 20px;
@@ -1176,11 +1242,24 @@ section.work {
   outline: transparent;
 }
 
+@media screen and (max-width: 466px) {
+  .footer__form-email {
+    width: 290px;
+  }
+}
+
+@media screen and (min-width: 468px) and (max-width: 1198px) {
+  .footer__form-email {
+    width: 450px;
+  }
+}
+
 .footer__form-email:not(:placeholder-shown) {
   border-color: #2196F3;
 }
 
 .footer__form-btn {
+  position: relative;
   background-color: var(--accent-color);
   margin-left: 12px;
   padding-top: 10px;
@@ -1198,6 +1277,12 @@ section.work {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1198px) {
+  .footer__form-btn {
+    margin-top: 20px;
+  }
 }
 
 .footer__form-btn:hover,
@@ -1389,7 +1474,6 @@ section.work {
 
 /*стилі контейнера*/
 .container {
-  width: 1200px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;

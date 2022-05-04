@@ -1,45 +1,71 @@
 /*стиль Футер*/
 
+/*стиль Футер*/
+
 
 .section.footer {
    background-color: var(--grey-color);
-   display: flex;
-   justify-content: center;
    padding-top: 60px;
    padding-bottom: 60px;
-}
 
-.footer__style {
-   @media screen and (max-width: 478px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+
+   @media screen and (max-width: 766px) {
+      display: block;
+      text-align: center;
    }
 
 
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 768px) {
       display: flex;
+   }
+
+}
+
+.footer__style {
+   display: flex;
+   align-items: baseline;
+
+   @media screen and (max-width: 766px) {
+      flex-direction: column;
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1198px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+   }
+
+   @media screen and (min-width: 1200px) {
       align-items: baseline;
+
    }
 }
 
 .footer__box {
-   @media screen and (max-width: 478px) {
-      text-align: center;
-      align-items: center;
+
+   @media screen and (max-width: 766px) {
+      margin-left: auto;
+      display: block;
+      margin-right: auto;
+   }
+
+   @media screen and (min-width: 768px)and (max-width: 1198px) {
+
+      margin-left: 76px;
+      margin-right: 165px;
    }
 }
 
 .footer--logo {
+   display: flex;
+   color: var(--main-color);
+
+
    @media screen and (max-width: 766px) {
-      display: flex;
-      color: var(--main-color);
-      justify-content: center;
+      margin-left: auto;
+      display: block;
+      margin-right: auto;
    }
-
-
-   @media screen and (min-width: 1200px) {}
-
 }
 
 .footer__adress {
@@ -49,15 +75,6 @@
 .footer__card {
    flex-direction: column;
 }
-
-.footer__list {
-   @media screen and (max-width: 766px) {
-      display: flex;
-      justify-content: center;
-   }
-}
-
-
 
 .footer__link {
    color: var(--main-color);
@@ -89,16 +106,23 @@
 .footer__common {
    display: flex;
    flex-direction: column;
-   text-align: center;
-   margin-top: 60px;
 
+   @media screen and (max-width: 766px) {
+      margin-left: auto;
+      display: block;
+      margin-right: auto;
+      margin-top: 60px;
+   }
 
+   @media screen and (min-width: 768px)and (max-width: 1198px) {
+      margin-right: 74px;
+      text-align: center;
+   }
 
    @media screen and (min-width: 1200px) {
-      display: flex;
-      flex-direction: column;
       margin-left: 70px;
    }
+
 }
 
 .footer__name {
@@ -121,10 +145,6 @@
    &-list:last-child {
       margin-right: 0px;
    }
-
-
-
-
 }
 
 .icon__footer {
@@ -155,23 +175,50 @@
 .footer__form-icon {
    fill: var(--main-color);
    position: absolute;
-   top: 38px;
+   top: 18px;
    right: 28px;
 }
 
 /*стиль Подпишися*/
 
 .footer__subscription {
-   margin-left: 93px;
+
    display: flex;
    flex-direction: column;
-   position: relative;
+
+   @media screen and (min-width: 768px) {
+      display: inline-block;
+   }
+
+
+
+   @media screen and (min-width: 1200px) {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+.footer__subscription {
+
+   @media screen and (max-width: 466px) {
+      width: 100%;
+   }
+
+
+   @media screen and (min-width: 468px) and (max-width: 1198px) {
+      width: 450px;
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+   }
 
 }
 
 .footer__subscription-name {
    font-size: 14px;
-   line-height: 1.14px;
+
    text-transform: uppercase;
    color: var(--main-color);
    margin-bottom: 20px;
@@ -194,6 +241,16 @@
    padding-top: 15px;
    padding-bottom: 15px;
    outline: transparent;
+
+   @media screen and (max-width: 466px) {
+      width: 290px;
+
+   }
+
+   @media screen and (min-width: 468px) and (max-width: 1198px) {
+      width: 450px;
+
+   }
 }
 
 .footer__form-email:not(:placeholder-shown) {
@@ -202,6 +259,11 @@
 
 
 .footer__form-btn {
+   @media screen and (max-width: 1198px) {
+      margin-top: 20px;
+   }
+
+   position: relative;
    background-color: var(--accent-color);
    margin-left: 12px;
    padding-top: 10px;
