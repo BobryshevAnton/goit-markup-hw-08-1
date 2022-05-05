@@ -16,4 +16,9 @@
    line-height: 1.7;
    letter-spacing: 0.03em;
    position: static;
+
+}
+
+.page.no-scroll {
+   overflow-y: hidden;
 }
