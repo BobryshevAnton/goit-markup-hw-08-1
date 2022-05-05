@@ -1421,11 +1421,14 @@ section.work {
 }
 
 .mobile__menu {
+  display: flex;
+  transform: translateX(0);
+  flex-direction: column;
+  justify-content: space-between;
   z-index: 200;
   position: fixed;
   top: 0;
   right: 0;
-  display: block;
   padding-top: 48px;
   padding-bottom: 40px;
   padding-left: 40px;
@@ -1447,10 +1450,11 @@ section.work {
   transform: translateX(0);
 }
 
+/*
 .mobile__nav {
-  margin-bottom: 302px;
+   margin-bottom: 302px;
 }
-
+*/
 .mobile__list {
   margin-top: 32px;
 }
@@ -1472,6 +1476,11 @@ section.work {
 
 .mobile__list:first-child {
   margin-top: 0;
+}
+
+.mobile__conteiner {
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile__info-list {
