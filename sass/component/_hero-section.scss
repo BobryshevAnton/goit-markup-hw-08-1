@@ -16,6 +16,10 @@
    margin-right: auto;
    margin-left: auto;
 
+   @media screen and (max-width: 479px) {
+      font-size: 22px;
+   }
+
    @media screen and (min-width: 480px) {
       width: 360px;
    }
@@ -50,15 +54,70 @@
 
 .background-hero {
    max-width: 1600px;
-   background-image: linear-gradient(to top,
-         rgba(47, 48, 58, 0.4),
-         rgba(47, 48, 58, 0.4)),
-      url(../img/icon/general-img.jpg);
 
    background-repeat: no-repeat;
    margin-left: auto;
    margin-right: auto;
+
+
+   @media screen and (max-width: 767px) {
+      background-image: linear-gradient(to top,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+         url(../../img/hero-image/img_sm.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+         .box {
+            background-image: linear-gradient(to top,
+                  rgba(47, 48, 58, 0.4),
+                  rgba(47, 48, 58, 0.4)),
+               url(../../img/hero-image/img@2x_sm.jpg);
+
+         }
+      }
+   }
+
+   @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to top,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+         url(../../img/hero-image/img_md.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+         .box {
+            background-image: linear-gradient(to top,
+                  rgba(47, 48, 58, 0.4),
+                  rgba(47, 48, 58, 0.4)),
+               url(../../img/hero-image/img@2x_md.jpg);
+
+         }
+      }
+   }
+
+   @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to top,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+         url(../../img/hero-image/Img_lg.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+         .box {
+            background-image: linear-gradient(to top,
+                  rgba(47, 48, 58, 0.4),
+                  rgba(47, 48, 58, 0.4)),
+               url(../../img/hero-image/Img@2x_lg.jpg);
+
+         }
+      }
+   }
 }
+
 
 .hero--button {
    color: var(--main-color);

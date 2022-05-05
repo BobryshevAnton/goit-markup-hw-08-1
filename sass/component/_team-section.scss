@@ -32,7 +32,7 @@
    flex-direction: column;
 
 
-   @media screen and (max-width: 1199px) {
+   @media screen and (max-width: 1198px) {
 
       margin-top: 30px;
    }
@@ -58,7 +58,7 @@
 .team__pict {
    display: block;
    box-sizing: border-box;
-   width: 100%;
+
 
    box-sizing: border-box;
    background-color: #FFFFFF;
@@ -73,7 +73,7 @@
 
    &:not(:last-child) {
 
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 479px) {
 
          margin-bottom: 30px;
       }
@@ -115,13 +115,17 @@
 
 .team__img {
    width: 100%;
+   height: auto;
 
    @media screen and (min-width: 768px) {
-      width: 354px;
+      max-width: 354px;
+      height: auto;
+
    }
 
    @media screen and (min-width: 1200px) {
-      width: 270px;
+      max-width: 270px;
+      height: auto;
 
    }
 }
