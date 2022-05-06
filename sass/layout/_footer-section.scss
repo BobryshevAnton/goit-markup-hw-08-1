@@ -53,6 +53,7 @@
 
       margin-left: 76px;
       margin-right: 165px;
+      text-align: center;
    }
 }
 
@@ -131,6 +132,8 @@
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
+
+
 }
 
 .footer__tags {
@@ -222,6 +225,12 @@
    text-transform: uppercase;
    color: var(--main-color);
    margin-bottom: 20px;
+
+   @media screen and (max-width: 479px) {
+      margin-top: 20px;
+   }
+
+
 
 }
 
